@@ -1,4 +1,4 @@
-roof of Authority Development Chain
+Proof of Authority Development Chain
 
 Contents
 Proof of Authority Development Chain

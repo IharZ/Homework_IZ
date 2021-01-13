@@ -66,8 +66,10 @@ Accounts used in the project are marked for BTC Test and ETH
 Executing test transactions by calling the functions from wallet.py
 
 
-BTCTest transaction
-```btc_acc = priv_key_to_account(BTCTEST,btc_PrivateKey) ``` ```create_trx(BTCTEST,btc_acc,"miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1", 0.1)``` ```send_trx(BTCTEST,btc_acc,'miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1',0.1)```
+BTC Test transaction
+```btc_acc = priv_key_to_account(BTCTEST,btc_PrivateKey) ```
+```create_trx(BTCTEST,btc_acc,"miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1", 0.1)``` 
+```send_trx(BTCTEST,btc_acc,'miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1',0.1)```
 
 
 

@@ -41,9 +41,6 @@ Test that you can run the ./derive script properly, use one of the examples on t
 
 NOTE: If one get an error running ./derive, as it can happen on windows machine then use: php ./hd-wallet-derive/hd-wallet-derive.php.
 Create a file called wallet.py -- this will be your universal wallet script.
-Your directory tree should look something like this:
-
-
 
 Setup constants file to manage coins
 In a separate file, constants.py, set the following constants:
@@ -56,25 +53,34 @@ In wallet.py, import all constants: from constants import *
 Use these anytime you reference these strings, both in function calls, and in setting object keys.
 
 Generate a Mnemonic phrase
+
 Generate a new 12 word mnemonic using hd-wallet-derive or by using this tool.
 
 Set this mnemonic as an environment variable, and include the one you generated as a fallback using: mnemonic = os.getenv('MNEMONIC', 'insert mnemonic here')
 
 Deriving a wallet
+
 Pass as variables Mnemonic (--mnemonic), Coin (--coin) and Numderive (--numderive), then set the --format=json flag, parse the output into a JSON object using json.loads(output).And finally pass all into one function, called 'derive_wallets'.
 When done properly, the final object should look something like this (there are only 3 children each in this image):
 Accounts used in the project are marked for BTC Test and ETH 
 Executing test transactions by calling the functions from wallet.py
+
+
 BTCTest transaction
 ```btc_acc = priv_key_to_account(BTCTEST,btc_PrivateKey) ``` ```create_trx(BTCTEST,btc_acc,"miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1", 0.1)``` ```send_trx(BTCTEST,btc_acc,'miZgMxdGzSxCTpWazfD2KqhewoUvcQ6CC1',0.1)```
+
+
 
 Confirmation of Executed Transaction
 
 
 
 ETH transaction - using local private blockchain
+
 ```eth_acc = priv_key_to_account(ETH,eth_PrivateKey) ```
 ```create_trx(ETH,eth_acc,"0xba51af165c60A32B3d23Df9B332b4A86cED4A1B9", 1000)``` 
 ```send_trx(ETH, eth_acc,"0xba51af165c60A32B3d23Df9B332b4A86cED4A1B9", 1000)```
+
+
 Confirmation of Executed Transaction
 

@@ -1,6 +1,9 @@
 MultiWallet
+
 Instruction: step by step
+
 New startup market race - initial requirement
+
 Main focus of a newly founded company is to build a portfolio management system (PMS) that supports both, traditional assets (like gold, silver, stocks, etc) and currently very hot topic - crypto-assets!!! But, as there are so many coins out there, our task to understand how HD wallets work, and to build out a system that can create them.
 
 Race to the market: Let the games begin !!!

@@ -64,7 +64,7 @@ Pass as variables Mnemonic (--mnemonic), Coin (--coin) and Numderive (--numderiv
 When done properly, the final object should look something like this (there are only 3 children each in this image):
 Accounts used in the project are marked for BTC Test and ETH 
 Executing test transactions by calling the functions from wallet.py
-
+(see screenshots)
 
 BTC Test transaction
 
@@ -75,7 +75,7 @@ BTC Test transaction
 
 
 Confirmation of Executed Transaction
-
+(see screenshots)
 
 
 ETH transaction - using local private blockchain
@@ -86,4 +86,4 @@ ETH transaction - using local private blockchain
 
 
 Confirmation of Executed Transaction
-
+(see screenshots)
